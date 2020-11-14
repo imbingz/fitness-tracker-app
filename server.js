@@ -22,6 +22,9 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+//Import routes handler
+require("./routes/html-routes")(app);
+
 //Setup Server
 app.listen(PORT, () => {
 	console.log(`listening on PORT ${PORT}, http://localhost:${PORT}`);
