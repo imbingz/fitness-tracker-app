@@ -1,7 +1,8 @@
 //Import packages
 const express = require("express");
 const logger = require("morgan");
-const mongoose = require("mongoose");
+//Connect to mongodb
+require("./config/dbconnect");
 
 //Setup PORT
 const PORT = process.env.PORT || 3000;
@@ -18,14 +19,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-//Connect to mongodb
-mongoose.connect("mongodb://localhost/workout", {
-	useNewUrlParser: true,
-	useFindAndModify: false,
-	useUnifiedTopology: true,
-});
-
 //Setup Server
 app.listen(PORT, () => {
-	console.log(`App running on port ${PORT}!`);
+	console.log(`listening on PORT ${PORT}, http://localhost:${PORT}`);
 });
