@@ -2,7 +2,10 @@
 const express = require("express");
 const logger = require("morgan");
 //Connect to mongodb
-require("./config/dbconnect");
+require("./config/dbconnect")();
+
+/**************   Delete Later   ***************** */
+// const Workout = require("./models/Workout.js");
 
 //Setup PORT
 const PORT = process.env.PORT || 3000;
