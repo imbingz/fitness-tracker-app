@@ -3,11 +3,9 @@ const express = require("express");
 const logger = require("morgan");
 //Import api-routes
 const apiRoute = require("./routes/api-routes");
+const htmlRoute = require("./routes/html-routes");
 //Connect to mongodb
 require("./config/dbconnect")();
-
-/**************   Delete Later   ***************** */
-// const Workout = require("./models/Workout.js");
 
 //Setup PORT
 const PORT = process.env.PORT || 3000;
@@ -26,7 +24,7 @@ app.use(express.static("public"));
 
 //Import routes handler
 app.use("/api/workouts", apiRoute);
-require("./routes/html-routes")(app);
+app.use("/", htmlRoute);
 
 //Setup Server
 app.listen(PORT, () => {
