@@ -1,6 +1,8 @@
 //Import packages
 const express = require("express");
 const logger = require("morgan");
+//Import api-routes
+const apiRoute = require("./routes/api-routes");
 //Connect to mongodb
 require("./config/dbconnect")();
 
@@ -23,6 +25,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 //Import routes handler
+app.use("/api/workouts", apiRoute);
 require("./routes/html-routes")(app);
 
 //Setup Server
