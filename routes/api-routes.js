@@ -40,6 +40,14 @@ router.put("/:id", async (req, res) => {
 
 //Route for GET "/api/workouts/range"
 // router.get("/range", getWorkoutInRange);
+router.get("/range", async (req, res) => {
+	try {
+		const result = await db.Workout.find({});
+		res.json(result);
+	} catch (error) {
+		res.status(500).send(error);
+	}
+});
 
 //Export router
 module.exports = router;
