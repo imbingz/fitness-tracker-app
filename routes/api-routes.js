@@ -5,8 +5,6 @@ const router = express.Router();
 const db = require("../models");
 
 //Route for GET "/api/workouts/"
-// router.get("/", getWorkouts);
-
 router.get("/", async (req, res) => {
 	try {
 		const result = await db.Workout.find({});
@@ -17,7 +15,6 @@ router.get("/", async (req, res) => {
 });
 
 //Route for POST "api/workouts/"
-// router.post("/", createWorkout);
 router.post("/", async ({ body }, res) => {
 	try {
 		const result = await db.Workout.create(body);
@@ -28,7 +25,6 @@ router.post("/", async ({ body }, res) => {
 });
 
 //Route for PUT "/api/workouts/workout_id"
-// router.put("/:id", addExercise);
 router.put("/:id", async (req, res) => {
 	try {
 		const result = await db.Workout.findByIdAndUpdate(req.params.id, req.body, { new: true });
@@ -39,7 +35,6 @@ router.put("/:id", async (req, res) => {
 });
 
 //Route for GET "/api/workouts/range"
-// router.get("/range", getWorkoutInRange);
 router.get("/range", async (req, res) => {
 	try {
 		const result = await db.Workout.find({});
