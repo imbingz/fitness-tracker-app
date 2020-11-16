@@ -67,7 +67,7 @@
   ## License
   This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.<br />
 
-    Copyright © 2020 [BING Z](https://imbingz.github.io/Responsive-Website-Portfolio/)
+  Copyright © 2020 [BING Z](https://imbingz.github.io/Responsive-Website-Portfolio/)
 
   <hr>
   <p align='center'><i>
