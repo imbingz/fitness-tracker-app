@@ -30,8 +30,8 @@
   ## Screenshots-Demo
   <kbd>![screenshot-demo1](./public/images/demo.gif)</kbd>
   ## Project Objective
-  * People will likly reach their fitness goals more quickly when they track their workout progress. 
-  * The project goal is to create a workout tracker using Mongo database with a Mongoose schema and handle routes with Express for given files in `Public` folder.
+  * People will likely reach their fitness goals more quickly when they track their workout progress. 
+  * The project goal is to create a workout tracker using a Mongo database with a Mongoose schema and handle routes with Express for given files in `public` folder.
   * When the user loads the page, the user should be given the option to create a new workout or continue with the last workout.
   * The workout tracker will allow users to 
       * Add exercises to a previous workout plan.
@@ -50,7 +50,7 @@
   Access to GitHub.com and a code editor such as vscode is necessary. Click the GitHub link provided above to the APP REPO. Click on the green button that says Clone or Download and Choose how you would like to download: using the SSH/HTTPS keys or download the zip file. If using SSH/HTTPS Key: You will copy the link shown and open up either terminal (mac: pre-installed) or gitbash (pc: must be installed). Once the application is open, you will type git clone paste url here. If using Download ZIP: Click on Download Zip. Locate the file and double click it to unzip the file. Locate the unzipped folder and open it. 
 
   ## Usage 
-  In order to use this APP, you need terminal (mac: pre-installed) or gitbash (pc: must be installed). You also need to download and install [node.js](https://nodejs.org/en/) and [npm](www.npmjs.com) or [yarn](https://yarnpkg.com/) package manager. Open the cloned REPO in your favorite code editor, and then in terminal, enter the command “ npm i “ or “yarn add”  to install the dependencies. You will also need to signup for a free account at [mongodb.com](https://www.mongodb.com/). In addition, make sure to create a .env file on the project root, and input your own Mysql Workbench config information (see .env_example for samples). Now you are ready to start using  the app by entering “npm start” on your terminal or gitbash. If you just want to try how the app works, you can go to the link [here](https://glacial-brushlands-35859.herokuapp.com/)
+  In order to use this APP, you need terminal (mac: pre-installed) or gitbash (pc: must be installed). You also need to download and install [node.js](https://nodejs.org/en/) and [npm](www.npmjs.com) or [yarn](https://yarnpkg.com/) package manager. Open the cloned REPO in your favorite code editor, and then in terminal, enter the command “npm i“ or “yarn add”  to install the dependencies. You will also need to signup for a free account at [mongodb.com](https://www.mongodb.com/). In addition, make sure to create a .env file on the project root, and input your own Mysql Workbench config information (see .env_example for samples). Now you are ready to start using  the app by entering “npm start” on your terminal or gitbash. If you just want to try how the app works, you can go to the link [here](https://glacial-brushlands-35859.herokuapp.com/)
 
   
   ## Credits and Reference
