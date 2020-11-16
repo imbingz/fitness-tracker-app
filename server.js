@@ -1,3 +1,4 @@
+const dotenv = require("dotenv").config();
 //Import packages
 const express = require("express");
 const logger = require("morgan");
