@@ -25,10 +25,18 @@ router.post("/", async ({ body }, res) => {
 });
 
 //Route for PUT "/api/workouts/workout_id"
-router.put("/:id", async (req, res) => {
+router.put("/:id", async ({ params, body }, res) => {
 	try {
-		const result = await db.Workout.findByIdAndUpdate(req.params.id, req.body, { new: true });
-		res.json(result);
+		let savedExercises = [];
+		//Find the previous workout by given ID
+		const prevWorkout = await db.Workout.findById(params.id);
+		//Get the previous exererises
+		savedExercises = prevWorkout.exercises;
+		//Add the new workout
+		totalExercises = [ ...savedExercises, body ];
+		res.json(totalExercises);
+		//Update the database
+		await db.Workout.findByIdAndUpdate(params.id, { exercises: totalExercises });
 	} catch (error) {
 		res.status(500).send(error);
 	}
