@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 //Setup Workout schema
-
 const WorkoutSchema = new Schema(
 	{
 		day: {
