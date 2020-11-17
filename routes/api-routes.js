@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
 		const result = await db.Workout.find({});
 		res.json(result);
 	} catch (error) {
-		res.status(500).send(error);
+		res.status(400).json(err);
 	}
 });
 
@@ -20,7 +20,7 @@ router.post("/", async ({ body }, res) => {
 		const result = await db.Workout.create(body);
 		res.json(result);
 	} catch (error) {
-		res.status(500).send(error);
+		res.status(400).json(err);
 	}
 });
 
@@ -38,7 +38,7 @@ router.put("/:id", async ({ params, body }, res) => {
 		//Update the database
 		await db.Workout.findByIdAndUpdate(params.id, { exercises: totalExercises });
 	} catch (error) {
-		res.status(500).send(error);
+		res.status(400).json(err);
 	}
 });
 
@@ -48,7 +48,7 @@ router.get("/range", async (req, res) => {
 		const result = await db.Workout.find({});
 		res.json(result);
 	} catch (error) {
-		res.status(500).send(error);
+		res.status(400).json(err);
 	}
 });
 
