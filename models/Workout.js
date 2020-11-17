@@ -55,7 +55,6 @@ const WorkoutSchema = new Schema(
 	}
 );
 
-//https://mongoosejs.com/docs/2.7.x/docs/virtuals.html
 WorkoutSchema.virtual("totalDuration").get(function() {
 	return this.exercises.reduce((total, exercise) => {
 		return total + (exercise.duration || 0);
