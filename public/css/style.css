@@ -21,7 +21,7 @@ body {
 }
 
 nav {
-	background: repeating-linear-gradient(
+	background-image: repeating-linear-gradient(
 			190deg,
 			rgba(255, 0, 0, 0.5) 40px,
 			rgba(255, 153, 0, 0.5) 80px,
@@ -47,6 +47,16 @@ nav {
 	padding: 10px;
 	line-height: 3;
 	font-size: 1.2rem;
+	animation: animateBg 14s linear infinite;
+	background-size: 400% 100%;
+}
+@keyframes animateBg {
+	0% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 0%;
+	}
 }
 
 a,
