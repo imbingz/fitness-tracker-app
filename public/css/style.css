@@ -21,7 +21,27 @@ body {
 }
 
 nav {
-	background-color: #5793fd;
+	background: repeating-linear-gradient(
+			190deg,
+			rgba(255, 0, 0, 0.5) 40px,
+			rgba(255, 153, 0, 0.5) 80px,
+			rgba(255, 0, 0, 0.5) 120px,
+			rgba(0, 255, 0, 0.5) 160px,
+			rgba(0, 0, 255, 0.5) 200px,
+			rgba(75, 0, 130, 0.5) 240px,
+			rgba(14, 14, 92, 0.5) 280px,
+			rgba(255, 0, 0, 0.5) 300px
+		),
+		repeating-linear-gradient(
+			23deg,
+			orange 100px,
+			yellow 150px,
+			green 200px,
+			blue 250px,
+			indigo 300px,
+			violet 350px,
+			indigo 300px
+		);
 	color: #ffffff;
 	height: 80px;
 	padding: 10px;
@@ -104,7 +124,6 @@ input {
 }
 
 .wrapper {
-	background-color: #f2f8ff;
 	padding-bottom: 100px;
 }
 
