@@ -29,6 +29,7 @@
 
   ## Screenshots-Demo
   <kbd>![screenshot-demo1](./public/images/demo.gif)</kbd>
+  <kbd>![screenshot-demo1](./public/images/m1.png)</kbd>
   ## Project Objective
   * People will likely reach their fitness goals more quickly when they track their workout progress. 
   * The project goal is to create a workout tracker using a Mongo database with a Mongoose schema and handle routes with Express for given files in `public` folder.
